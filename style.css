@@ -312,35 +312,6 @@ footer {
   position: relative;
   margin-top: auto;
 }
-@media (max-width: 768px) {
-  /* تصغير عرض الشريط الجانبي */
-  .sidebar {
-    width: 200px;
-  }
-
-  /* تصغير النصوص والمسافات */
-  .category-bar a {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  #search-bar {
-    font-size: 14px;
-  }
-
-  button {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-
-  .product-card {
-    padding: 10px;
-  }
-
-  .product-image {
-    height: 150px;
-  }
-}
 
 @media (max-width: 480px) {
   /* تحسين الشبكة على الشاشات الصغيرة جدًا */
@@ -366,5 +337,31 @@ footer {
     top: 10px;
     left: 10px;
     z-index: 1100;
+  }
+  /* تصغير النصوص والمسافات */
+  .category-bar a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #search-bar {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+  /* تصغير عرض الشريط الجانبي */
+  .sidebar {
+    width: 200px;
   }
 }
