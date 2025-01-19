@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>molkolchishop.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- الشريط الجانبي -->
+  <div class="sidebar">
+    <h1 class="site-title">molkolchi</h1>
+    <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
+    <nav class="category-bar">
+      <a href="javascript:void(0);" onclick="showCategory('gardening')">Gardening</a>
+      <a href="javascript:void(0);" onclick="showCategory('games')">Games</a>
+      <a href="javascript:void(0);" onclick="showCategory('electronics')">Electronics</a>
+      <a href="javascript:void(0);" onclick="showCategory('fashion')">Fashion</a>
+     
+    </nav>
+    <!-- شريط البحث -->
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search for products..." onkeyup="searchProducts()">
+      <button onclick="searchProducts()">🔍</button>
+    </div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main-content">
+    <!-- فيديو ترحيبي -->
+    <div class="video-section">
+      <iframe width="80%" height="400" src="https://www.youtube.com/embed/xmgidZ6GaMk?si=VH2yyg4AAokNaYh_" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- قسم الزراعة -->
+    <section class="product-grid" id="gardening">
+      <h2>Gardening</h2>
+      <!-- 8 بطاقات من المنتجات -->
+      <div class="product-card">
+        <img src="1.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">Plow</h3>
+        <p class="product-description">ثمن مناسب مع منتج مناسب لحديقتك</p>
+        <p class="product-price">200DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="2.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">Farming tools</h3>
+        <p class="product-description">مجموعة من الأدوات تساعدك على الاعتناء بحديقتك المنزلية</p>
+        <p class="product-price">300DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="3.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">Watering can</h3>
+        <p class="product-description">يساعد على سقي بكل سهولة</p>
+        <p class="product-price">150DH </p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="4.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">vacuum cleaner leaves</h3>
+        <p class="product-description">جمع الأوراق الشجر الساقطة أمام منزلك</p>
+        <p class="product-price">450DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="5.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">planting bucket</h3>
+        <p class="product-description">ازرع شجرتك الصغيرة في هذا سطل الكبير</p>
+        <p class="product-price">110DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="6.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">agricultural gloves</h3>
+        <p class="product-description">احمي يديك مع هذه القفزات القوية</p>
+        <p class="product-price">40DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="7.jpg" alt="Gardening Tool" class="product-image">
+        <h3 class="product-title">Farming boots</h3>
+        <p class="product-description">تجول في حديقتك بكول أريحية مع هذا المنتج مضاد للماء</p>
+        <p class="product-price">99.9DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <!-- More gardening products go here -->
+    </section>
+
+    <!-- قسم الألعاب -->
+    <section class="product-grid" id="games">
+      <h2>Games</h2>
+      <div class="product-card">
+        <img src="A.jpg" alt="Game 1" class="product-image">
+        <h3 class="product-title">gaming desk</h3>
+        <p class="product-description">مكتب مصنع بمواد متينة مع اضافة مكان القرورة و سماعات و تحكم فيها كما أردت من ناحية القياس</p>
+        <p class="product-price">1199DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="B.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">Gaming Headphones</h3>
+        <p class="product-description">3D SURROUND SOUND >سماعات قوية مع جهاز تحكم متصل بيها بالاضافة مع خاصية </p>
+        <p class="product-price">250DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="C.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">Gaming chair</h3>
+        <p class="product-description">القضاء أوقات أطول أمام شاشة بفضل هذا الكرسي المريح</p>
+        <p class="product-price">999.9DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="D.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">gaming mouse</h3>
+        <p class="product-description">تحكم في اللعب أكثر مع هذه الفأرة و لعب بكل راحة</p>
+        <p class="product-price">250DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="E.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">Graphics card</h3>
+        <p class="product-description">تساعدك على الحصول على أداء أفضل أثناء اللعب</p>
+        <p class="product-price">599.9DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="F.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">computer screen</h3>
+        <p class="product-description">شاشة بدقة جيدة جدا27 بوصة</p>
+        <p class="product-price">799DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="j.jpg" alt="Game 2" class="product-image">
+        <h3 class="product-title">Gaming keyboard</h3>
+        <p class="product-description">كيبورد مصمم خصيصًا للاعبين المحترفين، بجودة تصنيع عالية وأداء يلبي كل توقعاتك!        </p>
+        <p class="product-price">299DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+
+      <!-- More games products go here -->
+    </section>
+
+    <!-- قسم الإلكترونيات -->
+    <section class="product-grid" id="electronics">
+      <h2>Electronics</h2>
+      <div class="product-card">
+        <img src="1-1.avif" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">Smart TV</h3>
+        <p class="product-description">شاشة ذكية بدقة 4K مع تطبيقات مدمجة (Netflix/YouTube) وواجهة سهلة الاستخدام</p>
+        <p class="product-price">7000DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="2-2.jpg" alt="Electronics 2" class="product-image">
+        <h3 class="product-title">iPhone 16 Pro Max</h3>
+        <p class="product-description">هاتف ذكي فاخر بشاشة OLED، كاميرات متطورة وأداء عالي</p>
+        <p class="product-price">18000</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="3-3.jpg" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">PC Portable HP</h3>
+        <p class="product-description">حاسوب محمول HP بمعالج سريع، شاشة 15.6 بوصة، وتصميم خفيف</p>
+        <p class="product-price">2000DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="4-4.avif" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">Lamba RGB</h3>
+        <p class="product-description">لمبة ذكية بإضاءة قابلة للتخصيص عبر تطبيق، تناسب أي ديكور</p>
+        <p class="product-price">150DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="5-5.webp" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">Charger head</h3>
+        <p class="product-description">رأس شاحن سريع بقدر  33 واط متوافق مع الأجهزة الحديثة</p>
+        <p class="product-price">70DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="6-6.webp" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">Speaker RGB</h3>
+        <p class="product-description">مكبر صوت بإضاءة RGB وصوت قوي يناسب جلسات الألعاب والموسيقى</p>
+        <p class="product-price">199DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="7-7.webp" alt="Electronics 1" class="product-image">
+        <h3 class="product-title">Surveillance cameras</h3>
+        <p class="product-description">كاميرا مراقبة بدقة 4 ميجابيكسل مع رؤية ليلية ومتابعة عبر الهاتف</p>
+        <p class="product-price">300DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+
+      <!-- More electronics products go here -->
+    </section>
+
+    <!-- قسم الموضة -->
+    <section class="product-grid" id="fashion">
+      <h2>Fashion</h2>
+      <div class="product-card">
+        <img src="AA.webp" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Lip Gloss</h3>
+        <p class="product-description">ملمع شفاه يمنح لمسة براقة ورطوبة فائقة لتألق مثالي طوال اليوم</p>
+        <p class="product-price">40DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="BB.webp" alt="Fashion 2" class="product-image">
+        <h3 class="product-title">Women's Handbag</h3>
+        <p class="product-description">حقيبة يد أنيقة بتصميم عصري ومقابض مريحة، مثالية للاستخدام اليومي أو المناسبات</p>
+        <p class="product-price">200DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="C-C.jpg" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Blue Warm Shirt</h3>
+        <p class="product-description">قميص شتوي أزرق مصنوع من قماش ناعم ومريح، مناسب للأجواء الباردة</p>
+        <p class="product-price"> 200DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="D-D.jpg" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Women's Heels</h3>
+        <p class="product-description">حذاء كعب عالي بتصميم فاخر وإطلالة أنثوية مميزة، مثالي للسهرات والمناسبات</p>
+        <p class="product-price"> 250DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="E-E.jpg" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Boys' Wide Black Pants</h3>
+        <p class="product-description">سروال مريح وعملي بلون أسود واسع، مناسب للنشاطات اليومية</p>
+        <p class="product-price">199DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="F-F.jpg" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Multicolor Tie</h3>
+        <p class="product-description">ربطة عنق أنيقة متوفرة بألوان متنوعة لتتناسب مع جميع الإطلالات الرسمية</p>
+        <p class="product-price">150DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="J-J.jpg" alt="Fashion 1" class="product-image">
+        <h3 class="product-title">Elegant Women's Dress</h3>
+        <p class="product-description">فستان أنيق مصمم بدقة عالية لإبراز الأناقة، مثالي للمناسبات الخاصة</p>
+        <p class="product-price">300DH</p>
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+      </div>
+      <!-- More fashion products go here -->
+    </section>
+  </div>
+
+  <!-- تذييل الموقع -->
+  <footer>
+    <p>© 2025 molkolchi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
